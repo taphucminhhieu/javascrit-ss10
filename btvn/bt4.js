@@ -8,7 +8,7 @@ const players = [
   { name: "Benzema",  years: 19, salary: 75  }
 ];
 
-const analyzeSalary = (minYears, teamPlayers) => {
+const report = (minYears, teamPlayers) => {
   const qualified = teamPlayers.filter(player => player.years >= minYears);
 
   if (qualified.length === 0) {
@@ -42,6 +42,6 @@ const analyzeSalary = (minYears, teamPlayers) => {
   };
 };
 
-console.log(analyzeSalary(10, players));
+console.log(report(10, players));
 
-console.log(analyzeSalary(30, players));
+console.log(report(30, players));

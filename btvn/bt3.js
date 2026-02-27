@@ -13,8 +13,8 @@ const getFilteredTotalGoals = (minGoals, teamPlayers) => {
     return player.goals >= minGoals;
   });
 
-  let totalGoals = 0;
-  totalGoals = qualifiedPlayers.reduce((sum, player) => {
+  let total = 0;
+  total = qualifiedPlayers.reduce((sum, player) => {
     return sum + player.goals;
   }, 0);
 
